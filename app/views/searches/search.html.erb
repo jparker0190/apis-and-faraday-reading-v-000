@@ -1,13 +1,3 @@
 <div>
-  <% if @venues %>
-    <ul>
-    <% @venues.each do |venue| %>
-      <li>
-        <%= venue["name"] %><br>
-        <%= venue["location"]["address"] %><br>
-        Checkins: <%= venue["stats"]["checkinsCount"] %>
-      </li>
-    <% end %>
-    </ul>
-  <% end %>
+  <%= @resp.body if @resp %>
 </div>
