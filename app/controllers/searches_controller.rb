@@ -16,4 +16,6 @@ class SearchesController < ApplicationController
    @error = body["meta"]["errorDetail"]
    render 'search'
  end
+
+ end
 end
